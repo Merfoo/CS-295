@@ -15,11 +15,16 @@
 /* Use google fonts! */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1em;
     margin: 0 5%;
     line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
 }
 
 /* === TABBED responsive content made with flex and radio buttons ==== */
