@@ -68,8 +68,6 @@
                 </article>
             </section>
 
-            <p><script>document.write(document.lastModified);</script></p>
-
             <section id="comparison">
                 <table id="card-table" class="table">
                     <caption>Comparison of Frameworks</caption>
@@ -90,50 +88,57 @@
                     <tbody>
                          <tr>
                             <th class="st-head-row">Boilerplate</th>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>Browser support is provided via:
+                            <td>Standard HTML markup provided.</td>
+                            <td>CSS grids not included.</td>
+                            <td>CSS compilers not included.</td>
+                            <td>Comes with jQuery via CDN and local one for fall back and modernizer.</td>
+                            <td>Server-side scripts not included.</td>
+                            <td>Does not include any tools for external data handling.</td>
+                            <td>
+                                Browser support is provided via:
                                 Browser upgrade not, htaccess, touch/favorite
                                 MS touch tiles, normalize stylesheet
                             </td>
-                            <td>-</td>
+                            <td>Simple frameworks meant to get a basic website up and running quickly.</td>
                         </tr>
                         <tr>
                             <th class="st-head-row">Bootstrap</th>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td>Includes standard HTML markup and many preconfigured components.</td>
+                            <td>CSS grids use float properties to mimic pure CSS grid style.</td>
+                            <td>Includes precompiled LESS/SASS, can use Grunt to build LESS/SASS.</td>
+                            <td>Includes plenty of JS libraries to modify HTML elements behaviors.</td>
+                            <td>Server-side scripts not included.</td>
+                            <td>Does not include any tools for external data handling.</td>
+                            <td>
+                                Supports latest version of desktops browsers Chrome, Firefox, Internet Explorer, Opera, and Safari. 
+                                For mobile the latest versions of Chrome, Firefox, and Safari are supported.
+                            </td>
+                            <td>More complex framework for and inludes more libraries for a more interactive website.</td>
                         </tr>
                         <tr>
                             <th class="st-head-row">Angular.js</th>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td>Includes standard HTML markup and allows the creation of reuseable HTML components written in JS.</td>
+                            <td>CSS grids not included</td>
+                            <td>CSS compilers not included.</td>
+                            <td>AngularJS is a JS oriented framework, has tons of modular JS libraries you can use.</td>
+                            <td>Server-side scripts not included.</td>
+                            <td>Has limited functionality in JS for external data handling.</td>
+                            <td>Supports latest versions of Chrome, Firefox, Edge, Internet Explorer, Safari, iOS, Android, and Internet Explorer mobile</td>
+                            <td>Framework intended for developers that want to create an interactive website/webapp in typescript or JS.</td>
                         </tr>
                         <tr>
                             <th class="st-head-row">Ruby on Rails</th>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td>Includes standard HTML markup and has support for template files to make modular components.</td>
+                            <td>CSS grids not included.</td>
+                            <td>Includes support for SASS through a ruby gem thats installed by default.</td>
+                            <td>No JS included by default, supports JS libraries though.</td>
+                            <td>Framework is written in and requires Ruby on the server for development.</td>
+                            <td>External data handling is one of main pros of Ruby on Rails, has support for connecting to many popular databases.</td>
+                            <td>Ruby on Rails is a server side application, browser compatibility depends on the frontend framework beind used.</td>
+                            <td>
+                                Ruby on Rails intended for developers that want to create scalable applications with their choice of frontend. 
+                                Has great support and documentation for websites/webapp that use a database.
+                            </td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -143,9 +148,8 @@
                     </tfoot>
                 </table>
             </section>
+            <p><script>document.write(document.lastModified);</script></p>
         </main>
-
-        <p>Hello world! This is HTML5 Boilerplate.</p>
 
         <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.min.js"><\/script>')</script>
