@@ -1,0 +1,96 @@
+.stacktable { width: 100%; }
+
+.st-head-row { 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.st-head-row img {
+    width: 50px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.st-head-row a {
+    text-decoration: none;
+}
+
+.st-head-row.st-head-row-main { font-size: 1.5em; padding-top: 0; }
+
+.st-key {
+    width: 10%;
+    text-align: right;
+    padding-right: 1%;
+}
+
+.st-val { 
+    width: 49%; 
+    padding-left: 1%; 
+}
+
+table {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
+caption {
+    padding-bottom: 2%;
+}
+
+th, td {
+    padding: 1%;
+    border: 1px;
+}
+
+thead th {
+    text-align: center;
+    border-right: 1px solid gray;
+    background-color: transparent;
+}
+
+thead th:first-letter {
+    border: 0;
+}
+
+tbody td {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 0;
+}
+
+tbody td:last, thead th:last {
+    border: 0;
+}
+/* CSS-Tricks technique https://css-tricks.com/row-and-column-highlighting/ */
+.highlight,
+.highlight th.st-head-row,
+.highlight th.st-val {
+    background: hsla(129, 69%, 50%, 0.82);
+    background: var(--green);
+}
+
+/* Blurring technique via Jack Rugile at codepen.io/jackrugile/pen/EyABe?editors=0100 */
+tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px silver;
+}
+
+tbody:hover tr:hover td {
+    color: black;
+    text-shadow: 0 1px 0 transparent;
+}
+
+/* RESPONSIVE EXAMPLE */
+
+.stacktable.large-only { display: table; }
+.stacktable.small-only { display: none; }
+
+@media (max-width: 800px) {
+  .stacktable.large-only { display: none; }
+  .stacktable.small-only { display: table; }
+}
