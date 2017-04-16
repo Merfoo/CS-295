@@ -12,14 +12,36 @@
 /* ==========================================================================
    Author's custom styles                                       MOBILE STYLES
    ========================================================================== */
-/* Use google fonts! */
 
+:root {
+    --green: hsla(129, 69%, 50%, 0.82);
+    --greentint: hsla(129, 69%, 90%, 0.82);
+    --greenshade: hsla(129, 69%, 10%, 0.82);
+
+}
+
+/* Use google fonts! */
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 1em;
     margin: 0 5%;
     line-height: 1.4;
+}
+
+a,
+a:link,
+a:visited {
+    color: var(--green);
+}
+
+a:active {
+    color: var(--greenshade);
+}
+
+a:hover {
+    color: var(--greentint);
+    background-color: var(--greenshade);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,10 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 /* === TABBED responsive content made with flex and radio buttons ==== */
 
 #tabs label {
-    background-color: whitesmoke;
-    border: 2px solid gray;
-    border-bottom: 2px solid white;
-    color: black;
+    background-color: var(--greentint, whitesmoke);
+    border: 2px solid var(--greenshade, gray);
+    border-bottom: 2px solid var(--greentint, white);
+    color: var(--greenshade, black);
     cursor: pointer;
     margin: 0 2% 0 0;
     padding: 2% 6% 2% 3%;
@@ -47,9 +69,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #tabs label:hover {
-    background-color: black;
-    border-color: black;
-    color: white;
+    background-color: var(--greenshade, black);
+    border-color: var(--greenshade, black);
+    color: var(--greentint, white);
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -58,8 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #tabs article {
-    border: 2px solid gray;
-    color: black;
+    border: 2px solid var(--greenshade, gray);
+    color: var(--greenshade, black);
     margin: 6px 0 5% 0;
     min-height: auto;
     padding: 1% 2% 2% 2%;
@@ -71,18 +93,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #tabs input[type=radio]:checked + label {
-    border-color: gray;
-    border-bottom: 2px solid white;
-    color: black;
+    border-color: var(--greenshade, gray);
+    border-bottom: 2px solid var(--greentint, white);
+    color: var(--greenshade, black);
     margin-bottom: -2px;
-    background-color: white;
+    background-color: var(--greentint, white);
 }
 
 #tabs input[type=radio]:checked + label + article {
-    border: 2px solid gray;
-    color: black;
+    border: 2px solid var(--greenshade, gray);
+    color: var(--greenshade, black);
     display: block;
-    background-color: white;
+    background-color: var(--greentint, white);
 }
 
 /* ==========================================================================
