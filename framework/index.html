@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Fauzi Kliman's Comparison of Frameworks!</title>
+        <title>Plan for the development of Cooking Tutorials by Fauzi Kliman, OSU 2017</title>
         <meta name="description" content="Comparison of Frameworks">
         <meta name="keywords" content="fauzi's comparison of frameworks, fauzi's comparison of content management systems">
         <meta name="author" content="Fauzi Kliman">
@@ -30,7 +30,289 @@
             <h1><script>document.write(document.title);</script></h1>
         </header>
 
+        <nav id="articles">
+            <ul>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#flow">Flow</a></li>
+                <li><a href="#audience">Audience</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#technical">Technical</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#analysis">Analysis</a></li>
+            </ul>
+        </nav>
+
         <main>
+            <article>
+                <h2>Description</h2>
+                <p>
+                    I want to make a cooking tutorial website because I want a place where I can search for
+                    tutorials on how to make foods. I want the website organized such that its super easer to
+                    search for cooking tutorials based on type of food and duration of cooking time. This website
+                    will be accessible through searching in google "how to make..." or "how to cook...". The website
+                    will be for people that want a place where they can search for cooking tutorials. It will include
+                    foods of any time and will be categorized under when you would eat the meal, how long it takes to cook,
+                    and other potential categories like ingredients. The website will be run using Rails or NodeJS and VueJS.
+                </p>
+            </article>
+            <article id="goals">
+                <h2>List of Goals</h2>
+                <p>Upon entering the site, visitors will...</p>
+                <ol>
+                    <li>Learn how to cook food.</li>
+                    <li>Donate money to users that have posted cooking tutorials.</li>
+                    <li>Comment on cooking tutorials.</li>
+                    <li>Share cooking tutorials on various social media sites like Facebook and Twitter.</li>
+                </ol>
+            </article>
+            <article id="flow" class="tree">
+                <h2>User Flow</h2>
+                <p>
+                    The flow would basically consist of getting to the cooking tutorial website though google, seeing someone share
+                    the page on a social media website, typing the website directly into the url bar, or hearing about
+                    the website from a friend. Once the user is at a site they'll search for a cooking tutorial based on the type of meal
+                    they're looking for or on cooking duration.
+                </p>
+                <ul>
+                    <li><a href="#">4 Entry Points to Reach 4 Goals</a>
+                        <ul>
+                            <li><a href="#">Typed into browser</a>
+                                <ul>
+                                    <li><a href="#">Searches for cooking tutorial</a>
+                                        <ul>
+                                            <li><a href="#">Donates to user that posted cooking tutorial</a></li>
+                                            <li><a href="#">Shares tutorial on Facebook or Twitter</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Found website through searching google for cooking tutorials</a>
+                                <ul>
+                                    <li><a href="#">Searches for cooking tutorial</a>
+                                        <ul>
+                                            <li><a href="#">Donates to user that posted cooking tutorial</a></li>
+                                            <li><a href="#">Shares tutorial on Facebook or Twitter</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sees someone share a cooking tutorial</a>
+                                <ul>
+                                    <li><a href="#">Clicks on shared cooking tutorial</a>
+                                        <ul>
+                                            <li><a href="#">Donates to user that posted cooking tutorial</a>
+                                                <ul>
+                                                    <li><a href="#">Donates to user that posted cooking tutorial</a></li>
+                                                    <li><a href="#">Shares tutorial on Facebook or Twitter</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">A friend tells them about the cooking tutorial website</a>
+                                <ul>
+                                    <li><a href="#">Types website into browser</a>
+                                        <ul>
+                                            <li><a href="#">Searches for cooking tutorial</a>
+                                                <ul>
+                                                    <li><a href="#">Donates to user that posted cooking tutorial</a></li>
+                                                    <li><a href="#">Shares tutorial on Facebook or Twitter</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article id="audience">
+                <h2>Audience Demographics</h2>
+                <p>
+                    The audience demographics would be targeted towards college students, middle class people, and families.
+                </p>
+                <table id="demographics">
+                    <tr>
+                        <th>College students</th>
+                        <td>According to the <a href="https://nces.ed.gov/fastfacts/display.asp?id=372">National Center for Education Statistics</a>, 20.5 million students are expected to attend colleges in America.</td>
+                    </tr>
+                    <tr>
+                        <th>Middle class people</th>
+                        <td>According to <a href="http://www.pewresearch.org/fact-tank/2016/05/11/are-you-in-the-american-middle-class/">PewResearchCenter</a> roughly 51% of adults lived in middle-income households.</td>
+                    </tr>
+                    <tr>
+                        <th>Families</th>
+                        <td>According to <a href="https://www.statista.com/statistics/183648/average-size-of-households-in-the-us/">Statista</a> the average family is roughly just over 2 kids.</td>
+                    </tr>
+                </table>
+            </article>
+            <article id="search">
+                <h2>Search Phrases</h2>
+                <p>
+                    Phrases the audience would use include 
+                    "how to cook (food)", 
+                    "cooking tutorial for (food)", 
+                    "(food) tutorial", 
+                    "dinner food", 
+                    "breakfast food", 
+                    "lunch food", 
+                    "appetizer food",
+                    "food under $X", 
+                    "(food) recipes", 
+                    "cheap recipes".
+                </p>
+                <p>Potential domain names that support these phrases include:</p>
+                <dl>
+                    <dt>http://www.howtocook.com/</dt>
+                    <dd>available</dd>
+                    <dt>http://makefood.com/</dt>
+                    <dd>available</dd>
+                    <dt>http://easycooking.com/</dt>
+                    <dd>available</dd>
+                </dl>
+            </article>
+            <article id="technical">
+                <h2>Technical Requirements</h2>
+                <p>
+                    The framework I'll look into using for this project would be Ruby on Rails and NodeJS with VueJS.
+                    I have not decided which framework to use yet since I need to finalize the project more as time goes one.
+                    But I have limited experience with both so it would be a good learning experience either way.
+                </p>
+                <table id="card-table" class="table">
+                    <caption>Comparison of Frameworks</caption>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <colgroup></colgroup>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Markup</th>
+                            <th>CSS grids</th>
+                            <th>CSS Compilers</th>
+                            <th>Javascript Libraries</th>
+                            <th>Server-side Scripts</th>
+                            <th>Data Handling</th>
+                            <th>Browser Support</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                            <th class="st-head-row">
+                                <a href="https://html5boilerplate.com/" target="_blank">
+                                    <img src="img/html5-boilerplate-logo.png" alt="HTML5 Boilerplate"/>
+                                </a>
+                                Boilerplate
+                            </th>
+                            <td>Standard HTML markup provided.</td>
+                            <td>CSS grids not included.</td>
+                            <td>CSS compilers not included.</td>
+                            <td>Comes with jQuery via CDN and local one for fall back and modernizer.</td>
+                            <td>Server-side scripts not included.</td>
+                            <td>Does not include any tools for external data handling.</td>
+                            <td>
+                                Browser support is provided via:
+                                Browser upgrade not, htaccess, touch/favorite
+                                MS touch tiles, normalize stylesheet
+                            </td>
+                            <td>Simple frameworks meant to get a basic website up and running quickly.</td>
+                        </tr>
+                        <tr>
+                            <th class="st-head-row">
+                                <a href="http://getbootstrap.com/" target="_blank">
+                                    <img src="img/bootstrap-solid-logo.svg" alt="Bootstrap"/>
+                                </a>    
+                                Bootstrap
+                            </th>
+                            <td>Includes standard HTML markup and many preconfigured components.</td>
+                            <td>CSS grids use float properties to mimic pure CSS grid style.</td>
+                            <td>Includes precompiled LESS/SASS, can use Grunt to build LESS/SASS.</td>
+                            <td>Includes plenty of JS libraries to modify HTML elements behaviors.</td>
+                            <td>Server-side scripts not included.</td>
+                            <td>Does not include any tools for external data handling.</td>
+                            <td>
+                                Supports latest version of desktops browsers Chrome, Firefox, Internet Explorer, Opera, and Safari. 
+                                For mobile the latest versions of Chrome, Firefox, and Safari are supported.
+                            </td>
+                            <td>More complex framework for and includes more libraries for a more interactive website.</td>
+                        </tr>
+                        <tr>
+                            <th class="st-head-row">
+                                <a href="https://angular.io/" target="_blank">
+                                    <img src="img/angularjs-shield-small-logo.png" alt="AngularJS"/>
+                                </a>
+                                Angular.js
+                            </th>
+                            <td>Includes standard HTML markup and allows the creation of reusable HTML components written in JS.</td>
+                            <td>CSS grids not included</td>
+                            <td>CSS compilers not included.</td>
+                            <td>AngularJS is a JS oriented framework, has tons of modular JS libraries you can use.</td>
+                            <td>Server-side scripts not included.</td>
+                            <td>Has limited functionality in JS for external data handling.</td>
+                            <td>Supports latest versions of Chrome, Firefox, Edge, Internet Explorer, Safari, iOS, Android, and Internet Explorer mobile</td>
+                            <td>Framework intended for developers that want to create an interactive website/web app in typescript or JS.</td>
+                        </tr>
+                        <tr class="selection">
+                            <th class="st-head-row">
+                                <a href="http://rubyonrails.org/" target="_blank">
+                                    <img src="img/rails-logo.svg" alt="Ruby on Rails"/>
+                                </a>
+                                Ruby on Rails
+                            </th>
+                            <td>Includes standard HTML markup and has support for template files to make modular components.</td>
+                            <td>CSS grids not included.</td>
+                            <td>Includes support for SASS through a ruby gem thats installed by default.</td>
+                            <td>No JS included by default, supports JS libraries though.</td>
+                            <td>Framework is written in and requires Ruby on the server for development.</td>
+                            <td>External data handling is one of main pros of Ruby on Rails, has support for connecting to many popular databases.</td>
+                            <td>Ruby on Rails is a server side application, browser compatibility depends on the front end framework being used.</td>
+                            <td>
+                                Ruby on Rails intended for developers that want to create scalable applications with their choice of front end. 
+                                Has great support and documentation for websites/web app that use a database.
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="9"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <article id="design">
+                <h2>Design</h2>
+                <figure class="align fifty">
+                    <figcaption>This page layout includes the home page and the recipe page.</figcaption>
+                    <img id="design-plan" src="img/design-plan.jpg" alt="Cooking Tutorial" title="Cooking Tutorial"/>
+                </figure>
+                <p>The colors will be black and white with a very minimalistic style and trivial transitions to not distract the user.</p>
+                <br class="clearfix"/>
+            </article>
+            <article id="analysis">
+                <h2>Analysis of Success</h2>
+                <p>
+                    To analysis the success of the app I would be monitoring several things about the website.
+                    This would include peak hours, number of navigations the user made, and the most/least visited 
+                    sites on the page.
+                </p>
+                <p>Analytics components that need monitoring: </p>
+                <ul>
+                    <li>Number of visitors from USA per month.</li>
+                    <li>Average page navigations on the site.</li>
+                    <li>Most visited page on site.</li>
+                    <li>Least visited page on site.</li>
+                    <li>Hours with most users on site.</li>
+                </ul>
+            </article>
+
             <section id="tabs">
                 <input id="description" type="radio" name="tabs" checked="checked" />
                 <label for="description">Description</label>
@@ -118,113 +400,6 @@
             </section>
 
             <section id="comparison">
-                <table id="card-table" class="table">
-                    <caption>Comparison of Frameworks</caption>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <colgroup></colgroup>
-                    <thead>
-                        <tr>
-                            <th>&nbsp;</th>
-                            <th>Markup</th>
-                            <th>CSS grids</th>
-                            <th>CSS Compilers</th>
-                            <th>Javascript Libraries</th>
-                            <th>Server-side Scripts</th>
-                            <th>Data Handling</th>
-                            <th>Browser Support</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                         <tr>
-                            <th class="st-head-row">
-                                <a href="https://html5boilerplate.com/" target="_blank">
-                                    <img src="img/html5-boilerplate-logo.png" alt="HTML5 Boilerplate"/>
-                                </a>
-                                Boilerplate
-                            </th>
-                            <td>Standard HTML markup provided.</td>
-                            <td>CSS grids not included.</td>
-                            <td>CSS compilers not included.</td>
-                            <td>Comes with jQuery via CDN and local one for fall back and modernizer.</td>
-                            <td>Server-side scripts not included.</td>
-                            <td>Does not include any tools for external data handling.</td>
-                            <td>
-                                Browser support is provided via:
-                                Browser upgrade not, htaccess, touch/favorite
-                                MS touch tiles, normalize stylesheet
-                            </td>
-                            <td>Simple frameworks meant to get a basic website up and running quickly.</td>
-                        </tr>
-                        <tr>
-                            <th class="st-head-row">
-                                <a href="http://getbootstrap.com/" target="_blank">
-                                    <img src="img/bootstrap-solid-logo.svg" alt="Bootstrap"/>
-                                </a>    
-                                Bootstrap
-                            </th>
-                            <td>Includes standard HTML markup and many preconfigured components.</td>
-                            <td>CSS grids use float properties to mimic pure CSS grid style.</td>
-                            <td>Includes precompiled LESS/SASS, can use Grunt to build LESS/SASS.</td>
-                            <td>Includes plenty of JS libraries to modify HTML elements behaviors.</td>
-                            <td>Server-side scripts not included.</td>
-                            <td>Does not include any tools for external data handling.</td>
-                            <td>
-                                Supports latest version of desktops browsers Chrome, Firefox, Internet Explorer, Opera, and Safari. 
-                                For mobile the latest versions of Chrome, Firefox, and Safari are supported.
-                            </td>
-                            <td>More complex framework for and includes more libraries for a more interactive website.</td>
-                        </tr>
-                        <tr>
-                            <th class="st-head-row">
-                                <a href="https://angular.io/" target="_blank">
-                                    <img src="img/angularjs-shield-small-logo.png" alt="AngularJS"/>
-                                </a>
-                                Angular.js
-                            </th>
-                            <td>Includes standard HTML markup and allows the creation of reusable HTML components written in JS.</td>
-                            <td>CSS grids not included</td>
-                            <td>CSS compilers not included.</td>
-                            <td>AngularJS is a JS oriented framework, has tons of modular JS libraries you can use.</td>
-                            <td>Server-side scripts not included.</td>
-                            <td>Has limited functionality in JS for external data handling.</td>
-                            <td>Supports latest versions of Chrome, Firefox, Edge, Internet Explorer, Safari, iOS, Android, and Internet Explorer mobile</td>
-                            <td>Framework intended for developers that want to create an interactive website/web app in typescript or JS.</td>
-                        </tr>
-                        <tr>
-                            <th class="st-head-row">
-                                <a href="http://rubyonrails.org/" target="_blank">
-                                    <img src="img/rails-logo.svg" alt="Ruby on Rails"/>
-                                </a>
-                                Ruby on Rails
-                            </th>
-                            <td>Includes standard HTML markup and has support for template files to make modular components.</td>
-                            <td>CSS grids not included.</td>
-                            <td>Includes support for SASS through a ruby gem thats installed by default.</td>
-                            <td>No JS included by default, supports JS libraries though.</td>
-                            <td>Framework is written in and requires Ruby on the server for development.</td>
-                            <td>External data handling is one of main pros of Ruby on Rails, has support for connecting to many popular databases.</td>
-                            <td>Ruby on Rails is a server side application, browser compatibility depends on the front end framework being used.</td>
-                            <td>
-                                Ruby on Rails intended for developers that want to create scalable applications with their choice of front end. 
-                                Has great support and documentation for websites/web app that use a database.
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="9"></td>
-                        </tr>
-                    </tfoot>
-                </table>
-
                 <table id="card-table-cms" class="table">
                     <caption>Comparison of CMS applications</caption>
                     <colgroup></colgroup>
@@ -302,6 +477,9 @@
                 </table>
             </section>
             <footer>
+                <p>I approve of this plan and authorize Fauzi to begin working.</p>
+                <p class="alignright signature thirty">Date</p>
+                <p class="signature sixty">Signature</p>
                 <p><script>document.write(document.lastModified);</script></p>
             </footer>
         </main>
@@ -312,7 +490,7 @@
         <script src="js/main.js"></script>
         <script src="js/stacktable.js" type="text/javascript"></script>
         <script>
-            $('#card-table, #card-table-cms').cardtable();
+            $('#card-table').cardtable();
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

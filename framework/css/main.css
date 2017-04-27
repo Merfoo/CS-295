@@ -48,6 +48,25 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+.alignright {
+    float: right;
+    margin: 10% 0 0 10%;
+}
+
+.selection {
+    border: 10px solid var(--green);
+    background: var(--greenshade);
+    color: var(--green);
+}
+
+.signature {
+    border: 0px solid var(--green);
+    margin: 10% 0 0 0;
+}
+
+#card-table-cms {
+    display: none;
+}
 /* === TABBED responsive content made with flex and radio buttons ==== */
 
 #tabs label {
@@ -104,6 +123,90 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--greenshade, black);
     display: block;
     background-color: var(--greentint, white);
+}
+
+/* === Unordered List TREE Layout. Method at CodePen by Omar Jesus Bravo http://codepen.io/ojbravo/pen/xCcJq  ====*/
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+}
+
+.tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    max-width: 150px;
+}
+
+.tree li::before,
+.tree li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid var(--green);
+    width: 50%;
+    height: 20px;
+}
+
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid var(--green);
+}
+
+/* Remove left-right connectors from elements without siblings. */
+.tree li:only-child::after, 
+.tree li:only-child::before {
+    display: none;
+}
+
+/* Remove space from the top of single children*/
+.tree li:only-child {
+    padding-top: 0;
+}
+
+/* Remove left connector from first child and right connector from the last child. */
+.tree li:first-child::before, 
+.tree li:last-child::after {
+    border: 0 none;
+}
+
+/* Add back the vertical connector to the last nodes.*/
+.tree li:last-child::before {
+    border-right: 1px solid var(--green); 
+}
+
+.tree li:first-child::after {
+    border-radius: 5px 0 0 0; 
+}
+
+/* Add downward connectors from the parent. */
+.tree ul ul::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    border-left: 1px solid var(--green);; 
+    width: 0; 
+    height: 20px;
+}
+
+.tree li a {
+  border: 1px solid var(--green);
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--green);
+  font-size: 100%;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#design-plan {
+    width: 386px;
+    height: 500px;
 }
 
 /* ==========================================================================
@@ -205,6 +308,25 @@ h1, h2, h3, h4, h5, h6 {
 
     #tabs label {
         padding: 1% 2% 1% 1%;
+    }
+
+    #articles ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    #articles li {
+        margin: 0 10% 0 0;
+        padding: 0;
+        list-style-type: none;
+        width: auto;
+    }
+
+    #articles a {
+        padding: 10% 10%;
+        border: 10px solid var(--green);
+        border-radius: 10px;
     }
 }
 
