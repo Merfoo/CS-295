@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Fauzi's Cable TV Case Study</title>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+        <header>
+            <h1><script>document.write(document.title);</script></h1>
+        </header>
+        <main>
+            <article id="security">
+                <h2>Risks and Solutions</h2>
+                <p>
+                    There are multiple security issues. One security issue is only having one person
+                    be responsible for being super admin, having access to domain name, hosting account,
+                    and CMS account. Another security issue is giving the staff ftp access when the don't
+                    need it considering they already have accounts with the same access. Another security
+                    issue is that the SSL certificate could only be for the domain and not subdomains.
+                    Another issue is comments don't have to be processed first would could allow people
+                    to post malicious content.
+                </p>
+                <dl class="numbered">
+                    <dt>Too much responsibility</dt>
+                    <dd>Split up responsibility among multiple people.</dd>
+                    <dd>Don't give all the responsibility to one person to begin with.</dd>
+                    <dt>FTP Access</dt>
+                    <dd>Revoke FTP access.</dd>
+                    <dd>Don't give them FTP access to begin with.</dd>
+                    <dt>SSL Coverage</dt>
+                    <dd>Get multiple SSL for subdomains or wildcard SSL for domain.</dd>
+                    <dd>Get multiple SSl for subdomains or wildcard SSL for domain to being with.</dd>
+                    <dt>Malicious Comments</dt>
+                    <dd>Remove malcious comments.</dd>
+                    <dd>Process comments before actually posting them.</dd>
+                </dl>
+            </article>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

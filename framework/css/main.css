@@ -48,6 +48,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+dt {
+    font-weight: normal;
+    color: black;
+    border: none;
+}
+
+.numbered {
+    counter-reset: numbers;
+}
+
+.numbered dt:before {
+    counter-increment: numbers;
+    content: counter(numbers) ". ";
+}
+
+#security dd::before {
+    content: "Solution: ";
+}
+
+#security dd:nth-of-type(even)::before {
+    content: "Prevention: ";
+}
+
 .alignright {
     float: right;
     margin: 10% 0 0 10%;
